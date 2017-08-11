@@ -1,0 +1,116 @@
+
+body,header {
+    margin:0;
+    background-color:black;
+    font-family: Courier, sans-serif;
+    color: #22B14C;
+    display: grid;
+    grid-template-columns: 12% 73% 15%;
+    grid-template-rows: auto;
+    grid-template-areas: "top-left middle top-right"
+                         "bottom-left middle bottom-right"
+                         "floor floor floor"
+                         "floor1 floor1 floor1"
+}
+
+.fitnessRecap{
+    grid-area:floor1;
+    background-color:white;
+    display: inline-block;
+
+}
+
+.neurNet{
+    grid-area:floor;
+    background-color:white;
+    display: inline-block;
+}
+#controls {
+	font-size:0.8em;
+    grid-area: top-left;
+    margin: 0;
+    border-style: solid;
+    border-color: #22B14C;
+    padding-left:1em;
+    margin-bottom:0;
+}
+
+#map {
+    background-color:white;
+    grid-area: bottom-right;
+    margin-left: 0em;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 0em;
+    display: inline-block;
+}
+
+#canRes {
+    grid-area: middle;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#game{
+    border: 1px solid black;
+
+}
+#results {
+    grid-area: middle;
+    margin-left: auto;
+    margin-right: 0em;
+    border: 1px solid black;
+    display: inline-block;
+}
+.timer{
+    grid-area: bottom-left;
+    vertical-align: text-top;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:3em;
+    border: 0.1em solid #22B14C;
+    border-radius: 1em;
+    background-color:#0000CD;
+    padding:0.2em;
+}
+
+#idLogout{
+    margin: 0;
+    margin-left:auto;
+    margin-right:auto;
+    border-style: solid;
+    border-color: #22B14C;
+    margin-bottom:200%;
+}
+
+.username{
+    color:red;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    text-align: right;
+}
+
+th {
+    text-align: center;
+    color:red;
+}
+
+td, th {
+    vertical-align: middle;
+    border: 0.3em solid #22B14C;
+}
+
+a{
+    color:#22B14C;    
+}
+
+.smileClass{
+    margin-top:2em;
+}
